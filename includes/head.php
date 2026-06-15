@@ -12,7 +12,7 @@
   <?php endif; ?>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link rel="icon" type="image/png" href="/assets/icons/fav.png" />
 
   <!-- Google Fonts: Host Grotesk -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
