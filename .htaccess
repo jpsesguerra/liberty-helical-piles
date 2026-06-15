@@ -4,9 +4,17 @@ DirectoryIndex index.php index.html
 RewriteEngine On
 RewriteBase /
 
-# Force HTTPS (uncomment on production)
-# RewriteCond %{HTTPS} off
-# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# 301 redirects — preserve SEO from old URL structure
+Redirect 301 /installer /become-an-installer
+Redirect 301 /service /services
+Redirect 301 /service/helical-pile-piers-installation /services/helical-pile-installation
+Redirect 301 /service/foundation-underpinning-repair /services/underpinning-repair
+Redirect 301 /service/equipment-rentals-sale /services/equipment-rentals
+Redirect 301 /service/custom-fabrication /services/custom-fabrication
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Remove trailing slash (except root)
 RewriteCond %{REQUEST_FILENAME} !-d
