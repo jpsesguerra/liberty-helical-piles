@@ -21,5 +21,14 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JGN5G7YM06"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-JGN5G7YM06');
+  </script>
 </head>
 <body>
