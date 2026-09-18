@@ -1,6 +1,7 @@
 <?php
 $page_title       = 'Building on a Strong Foundation';
 $page_description = 'With over 15 years of industry experience, Liberty Helical Piles delivers helical pile/pier design, supply, and installation across the United States.';
+$canonical_url    = 'https://libertyhelicalpiles.com/';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/topbar.php';
 require_once __DIR__ . '/includes/header.php';

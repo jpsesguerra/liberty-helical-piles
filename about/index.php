@@ -1,6 +1,7 @@
 <?php
 $page_title       = 'About Us';
 $page_description = 'Liberty Helical Piles is dedicated to providing top-tier helical pile services throughout the United States. Learn about our commitment to safety, quality, and customer satisfaction.';
+$canonical_url    = 'https://libertyhelicalpiles.com/about';
 require_once __DIR__ . '/../includes/head.php';
 require_once __DIR__ . '/../includes/topbar.php';
 require_once __DIR__ . '/../includes/header.php';

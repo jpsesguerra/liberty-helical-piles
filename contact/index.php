@@ -1,6 +1,7 @@
 <?php
 $page_title       = 'Contact Us';
 $page_description = 'Get in touch with Liberty Helical Piles. Request a free consultation for helical pile installation, underpinning, equipment rentals, or custom fabrication across the United States.';
+$canonical_url    = 'https://libertyhelicalpiles.com/contact';
 require_once __DIR__ . '/../includes/head.php';
 require_once __DIR__ . '/../includes/topbar.php';
 require_once __DIR__ . '/../includes/header.php';

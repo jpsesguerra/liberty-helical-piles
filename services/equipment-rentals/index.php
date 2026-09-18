@@ -1,6 +1,7 @@
 <?php
 $page_title       = 'Equipment Rentals &amp; Sale';
 $page_description = 'Helical pile equipment rentals and sales for contractors and DIY enthusiasts. Hydraulic driver units, electric drive units, hand install units, and torque monitoring equipment.';
+$canonical_url    = 'https://libertyhelicalpiles.com/services/equipment-rentals';
 require_once __DIR__ . '/../../includes/head.php';
 require_once __DIR__ . '/../../includes/topbar.php';
 require_once __DIR__ . '/../../includes/header.php';

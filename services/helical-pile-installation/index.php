@@ -1,6 +1,7 @@
 <?php
 $page_title       = 'Helical Pile / Piers Installation';
 $page_description = 'Expert helical pile and pier installation services. Our certified installers adapt to various environments, from tight corridors to challenging terrains, across the United States.';
+$canonical_url    = 'https://libertyhelicalpiles.com/services/helical-pile-installation';
 require_once __DIR__ . '/../../includes/head.php';
 require_once __DIR__ . '/../../includes/topbar.php';
 require_once __DIR__ . '/../../includes/header.php';

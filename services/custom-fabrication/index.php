@@ -1,6 +1,7 @@
 <?php
 $page_title       = 'Custom Fabrication';
 $page_description = 'Custom helical pile fabrication services including extensions, caps, brackets, and saddles. Our team designs and produces components for optimal performance and compatibility.';
+$canonical_url    = 'https://libertyhelicalpiles.com/services/custom-fabrication';
 require_once __DIR__ . '/../../includes/head.php';
 require_once __DIR__ . '/../../includes/topbar.php';
 require_once __DIR__ . '/../../includes/header.php';

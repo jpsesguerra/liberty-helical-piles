@@ -13,14 +13,19 @@ document.addEventListener('DOMContentLoaded', function () {
     hamburger.addEventListener('click', function () {
       hamburger.classList.toggle('open');
       mobileNav.classList.toggle('open');
-      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+      const isOpen = mobileNav.classList.contains('open');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   }
 
   if (mobileClose && mobileNav) {
     mobileClose.addEventListener('click', function () {
       mobileNav.classList.remove('open');
-      if (hamburger) hamburger.classList.remove('open');
+      if (hamburger) {
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
       document.body.style.overflow = '';
     });
   }
@@ -30,7 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
     mobileNav.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', function () {
         mobileNav.classList.remove('open');
-        if (hamburger) hamburger.classList.remove('open');
+        if (hamburger) {
+          hamburger.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', 'false');
+        }
         document.body.style.overflow = '';
       });
     });

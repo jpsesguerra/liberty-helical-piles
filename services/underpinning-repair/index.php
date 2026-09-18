@@ -1,6 +1,7 @@
 <?php
 $page_title       = 'Underpinning &amp; Repair';
 $page_description = 'Foundation underpinning and structural repair services. We stabilize and restore foundations affected by settling, cracks, and structural weaknesses across the United States.';
+$canonical_url    = 'https://libertyhelicalpiles.com/services/underpinning-repair';
 require_once __DIR__ . '/../../includes/head.php';
 require_once __DIR__ . '/../../includes/topbar.php';
 require_once __DIR__ . '/../../includes/header.php';

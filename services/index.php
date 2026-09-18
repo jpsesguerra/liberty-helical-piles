@@ -1,6 +1,7 @@
 <?php
 $page_title       = 'Our Services';
 $page_description = 'Liberty Helical Piles offers a full spectrum of foundation services including helical pile installation, underpinning & repair, equipment rentals, and custom fabrication across the United States.';
+$canonical_url    = 'https://libertyhelicalpiles.com/services';
 require_once __DIR__ . '/../includes/head.php';
 require_once __DIR__ . '/../includes/topbar.php';
 require_once __DIR__ . '/../includes/header.php';

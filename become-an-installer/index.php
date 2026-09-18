@@ -1,6 +1,7 @@
 <?php
 $page_title       = 'Become an Installer';
 $page_description = 'Join the Liberty Helical Piles network. Partner with us as a certified helical pile installer and grow your business across the United States.';
+$canonical_url    = 'https://libertyhelicalpiles.com/become-an-installer';
 require_once __DIR__ . '/../includes/head.php';
 require_once __DIR__ . '/../includes/topbar.php';
 require_once __DIR__ . '/../includes/header.php';

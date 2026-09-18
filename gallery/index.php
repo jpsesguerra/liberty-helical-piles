@@ -1,6 +1,7 @@
 <?php
 $page_title       = 'Gallery';
 $page_description = 'Browse our gallery of completed helical pile foundation projects — residential, commercial, decks, docks, solar, and more across the United States.';
+$canonical_url    = 'https://libertyhelicalpiles.com/gallery';
 require_once __DIR__ . '/../includes/head.php';
 require_once __DIR__ . '/../includes/topbar.php';
 require_once __DIR__ . '/../includes/header.php';
