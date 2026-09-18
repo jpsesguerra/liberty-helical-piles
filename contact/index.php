@@ -174,6 +174,9 @@ require_once __DIR__ . '/../includes/header.php';
           status.classList.add('form-status--success');
           btn.textContent = 'Send Your Message';
           btn.disabled = false;
+          if (typeof gtag === 'function') {
+            gtag('event', 'generate_lead', { event_category: 'Contact Form', event_label: 'Contact Page' });
+          }
         } else {
           throw new Error(data.message || 'Submission failed');
         }
