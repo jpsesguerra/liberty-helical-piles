@@ -1,7 +1,15 @@
 <?php
-$page_title       = 'Gallery';
-$page_description = 'Browse our gallery of completed helical pile foundation projects — residential, commercial, decks, docks, solar, and more across the United States.';
+$page_title       = 'Project Gallery | Helical Pile Installations';
+$page_description = 'Browse our gallery of completed helical pile and pier foundation projects — residential decks, commercial structures, dock foundations, solar arrays, and more across the United States.';
 $canonical_url    = 'https://libertyhelicalpiles.com/gallery';
+$page_schema      = '{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",    "item": "https://libertyhelicalpiles.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Gallery", "item": "https://libertyhelicalpiles.com/gallery" }
+  ]
+}';
 require_once __DIR__ . '/../includes/head.php';
 require_once __DIR__ . '/../includes/topbar.php';
 require_once __DIR__ . '/../includes/header.php';

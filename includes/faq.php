@@ -28,6 +28,24 @@ if (!isset($faq_items)) {
   ];
 }
 ?>
+<script type="application/ld+json">
+<?php
+echo json_encode([
+  '@context'   => 'https://schema.org',
+  '@type'      => 'FAQPage',
+  'mainEntity' => array_map(function ($item) {
+    return [
+      '@type' => 'Question',
+      'name'  => $item['question'],
+      'acceptedAnswer' => [
+        '@type' => 'Answer',
+        'text'  => $item['answer'],
+      ],
+    ];
+  }, $faq_items),
+], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+?>
+</script>
 
 <section class="faq-section">
   <div class="faq-inner">

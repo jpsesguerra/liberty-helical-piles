@@ -1,7 +1,29 @@
 <?php
-$page_title       = 'Helical Pile / Piers Installation';
-$page_description = 'Expert helical pile and pier installation services. Our certified installers adapt to various environments, from tight corridors to challenging terrains, across the United States.';
+$page_title       = 'Helical Pile & Pier Installation Services';
+$page_description = 'Professional helical pile and pier installation across the United States. Ideal for residential deck foundations, commercial structures, dock foundations, solar arrays, and challenging terrains.';
 $canonical_url    = 'https://libertyhelicalpiles.com/services/helical-pile-installation';
+$page_schema      = '{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home",                          "item": "https://libertyhelicalpiles.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Services",                      "item": "https://libertyhelicalpiles.com/services" },
+        { "@type": "ListItem", "position": 3, "name": "Helical Pile/Pier Installation","item": "https://libertyhelicalpiles.com/services/helical-pile-installation" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Helical Pile/Pier Installation",
+      "serviceType": "Helical Pile and Pier Installation",
+      "description": "Professional helical pile and pier installation across the United States. Ideal for residential deck foundations, commercial structures, dock foundations, solar arrays, and challenging terrains.",
+      "provider": { "@id": "https://libertyhelicalpiles.com/#organization" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://libertyhelicalpiles.com/services/helical-pile-installation"
+    }
+  ]
+}';
 require_once __DIR__ . '/../../includes/head.php';
 require_once __DIR__ . '/../../includes/topbar.php';
 require_once __DIR__ . '/../../includes/header.php';

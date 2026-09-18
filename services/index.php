@@ -1,7 +1,15 @@
 <?php
-$page_title       = 'Our Services';
-$page_description = 'Liberty Helical Piles offers a full spectrum of foundation services including helical pile installation, underpinning & repair, equipment rentals, and custom fabrication across the United States.';
+$page_title       = 'Helical Pile & Foundation Services';
+$page_description = 'Liberty Helical Piles offers a full range of foundation services — helical pile and pier installation, underpinning & repair, equipment rentals, and custom fabrication across the United States.';
 $canonical_url    = 'https://libertyhelicalpiles.com/services';
+$page_schema      = '{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",     "item": "https://libertyhelicalpiles.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://libertyhelicalpiles.com/services" }
+  ]
+}';
 require_once __DIR__ . '/../includes/head.php';
 require_once __DIR__ . '/../includes/topbar.php';
 require_once __DIR__ . '/../includes/header.php';

@@ -1,7 +1,29 @@
 <?php
-$page_title       = 'Underpinning &amp; Repair';
-$page_description = 'Foundation underpinning and structural repair services. We stabilize and restore foundations affected by settling, cracks, and structural weaknesses across the United States.';
+$page_title       = 'Foundation Underpinning & Structural Repair';
+$page_description = 'Expert foundation underpinning and structural repair using helical piers across the United States. We stabilize and restore foundations affected by settling, cracks, and structural weaknesses.';
 $canonical_url    = 'https://libertyhelicalpiles.com/services/underpinning-repair';
+$page_schema      = '{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home",                  "item": "https://libertyhelicalpiles.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Services",              "item": "https://libertyhelicalpiles.com/services" },
+        { "@type": "ListItem", "position": 3, "name": "Underpinning & Repair", "item": "https://libertyhelicalpiles.com/services/underpinning-repair" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Foundation Underpinning & Repair",
+      "serviceType": "Foundation Underpinning and Structural Repair",
+      "description": "Expert foundation underpinning and structural repair using helical piers across the United States. We stabilize and restore foundations affected by settling, cracks, and structural weaknesses.",
+      "provider": { "@id": "https://libertyhelicalpiles.com/#organization" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://libertyhelicalpiles.com/services/underpinning-repair"
+    }
+  ]
+}';
 require_once __DIR__ . '/../../includes/head.php';
 require_once __DIR__ . '/../../includes/topbar.php';
 require_once __DIR__ . '/../../includes/header.php';

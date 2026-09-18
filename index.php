@@ -1,7 +1,13 @@
 <?php
-$page_title       = 'Building on a Strong Foundation';
-$page_description = 'With over 15 years of industry experience, Liberty Helical Piles delivers helical pile/pier design, supply, and installation across the United States.';
+$page_title       = 'Helical Pile & Pier Foundation Solutions';
+$page_description = 'Liberty Helical Piles provides expert helical pile and pier installation, foundation underpinning, equipment rentals, and custom fabrication across the United States. 15+ years of experience.';
 $canonical_url    = 'https://libertyhelicalpiles.com/';
+$page_schema      = '{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Liberty Helical Piles",
+  "url": "https://libertyhelicalpiles.com"
+}';
 require_once __DIR__ . '/includes/head.php';
 require_once __DIR__ . '/includes/topbar.php';
 require_once __DIR__ . '/includes/header.php';

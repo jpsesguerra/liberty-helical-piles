@@ -1,7 +1,15 @@
 <?php
-$page_title       = 'Become an Installer';
-$page_description = 'Join the Liberty Helical Piles network. Partner with us as a certified helical pile installer and grow your business across the United States.';
+$page_title       = 'Become a Helical Pile Installer | Join Our Network';
+$page_description = 'Join the Liberty Helical Piles network. Partner with us as a certified helical pile and pier installer and grow your foundation business across the United States.';
 $canonical_url    = 'https://libertyhelicalpiles.com/become-an-installer';
+$page_schema      = '{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",                 "item": "https://libertyhelicalpiles.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Become an Installer",  "item": "https://libertyhelicalpiles.com/become-an-installer" }
+  ]
+}';
 require_once __DIR__ . '/../includes/head.php';
 require_once __DIR__ . '/../includes/topbar.php';
 require_once __DIR__ . '/../includes/header.php';

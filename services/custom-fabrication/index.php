@@ -1,7 +1,29 @@
 <?php
-$page_title       = 'Custom Fabrication';
-$page_description = 'Custom helical pile fabrication services including extensions, caps, brackets, and saddles. Our team designs and produces components for optimal performance and compatibility.';
+$page_title       = 'Custom Helical Pile Fabrication Services';
+$page_description = 'Custom helical pile and pier fabrication including extensions, caps, brackets, and saddles. Our team designs and produces components for optimal performance and compatibility across the United States.';
 $canonical_url    = 'https://libertyhelicalpiles.com/services/custom-fabrication';
+$page_schema      = '{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home",               "item": "https://libertyhelicalpiles.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Services",           "item": "https://libertyhelicalpiles.com/services" },
+        { "@type": "ListItem", "position": 3, "name": "Custom Fabrication", "item": "https://libertyhelicalpiles.com/services/custom-fabrication" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Custom Helical Pile Fabrication",
+      "serviceType": "Custom Steel Fabrication",
+      "description": "Custom helical pile and pier fabrication including extensions, caps, brackets, and saddles. Designed and produced for optimal performance and compatibility.",
+      "provider": { "@id": "https://libertyhelicalpiles.com/#organization" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://libertyhelicalpiles.com/services/custom-fabrication"
+    }
+  ]
+}';
 require_once __DIR__ . '/../../includes/head.php';
 require_once __DIR__ . '/../../includes/topbar.php';
 require_once __DIR__ . '/../../includes/header.php';

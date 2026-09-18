@@ -1,7 +1,15 @@
 <?php
-$page_title       = 'Contact Us';
-$page_description = 'Get in touch with Liberty Helical Piles. Request a free consultation for helical pile installation, underpinning, equipment rentals, or custom fabrication across the United States.';
+$page_title       = 'Contact Us | Free Helical Pile Consultation';
+$page_description = 'Get in touch with Liberty Helical Piles. Request a free consultation for helical pile and pier installation, underpinning, equipment rentals, or custom fabrication across the United States.';
 $canonical_url    = 'https://libertyhelicalpiles.com/contact';
+$page_schema      = '{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home",       "item": "https://libertyhelicalpiles.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://libertyhelicalpiles.com/contact" }
+  ]
+}';
 require_once __DIR__ . '/../includes/head.php';
 require_once __DIR__ . '/../includes/topbar.php';
 require_once __DIR__ . '/../includes/header.php';

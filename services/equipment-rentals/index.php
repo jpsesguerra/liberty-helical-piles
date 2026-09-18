@@ -1,7 +1,29 @@
 <?php
-$page_title       = 'Equipment Rentals &amp; Sale';
-$page_description = 'Helical pile equipment rentals and sales for contractors and DIY enthusiasts. Hydraulic driver units, electric drive units, hand install units, and torque monitoring equipment.';
+$page_title       = 'Helical Pile Equipment Rentals & Sales';
+$page_description = 'Helical pile and pier equipment rentals and sales for contractors and DIY enthusiasts. Hydraulic driver units, electric drive units, hand install units, and torque monitoring equipment across the USA.';
 $canonical_url    = 'https://libertyhelicalpiles.com/services/equipment-rentals';
+$page_schema      = '{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home",                    "item": "https://libertyhelicalpiles.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Services",                "item": "https://libertyhelicalpiles.com/services" },
+        { "@type": "ListItem", "position": 3, "name": "Equipment Rentals & Sale","item": "https://libertyhelicalpiles.com/services/equipment-rentals" }
+      ]
+    },
+    {
+      "@type": "Service",
+      "name": "Helical Pile Equipment Rentals & Sale",
+      "serviceType": "Equipment Rental",
+      "description": "Helical pile and pier equipment rentals and sales for contractors and DIY enthusiasts. Hydraulic driver units, electric drive units, hand install units, and torque monitoring equipment.",
+      "provider": { "@id": "https://libertyhelicalpiles.com/#organization" },
+      "areaServed": { "@type": "Country", "name": "United States" },
+      "url": "https://libertyhelicalpiles.com/services/equipment-rentals"
+    }
+  ]
+}';
 require_once __DIR__ . '/../../includes/head.php';
 require_once __DIR__ . '/../../includes/topbar.php';
 require_once __DIR__ . '/../../includes/header.php';
